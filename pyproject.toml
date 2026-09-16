@@ -3,7 +3,7 @@ name = "aa-2627"
 version = "0.3.0"
 description = "Material del curs 2026-2027 de l'assignatura Aprenentatge Automàtic a la UIB (21781)"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.13"
 dependencies = [
     "matplotlib>=3.10.6",
     "notebook>=7.4.7",
