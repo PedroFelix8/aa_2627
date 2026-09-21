@@ -15,7 +15,18 @@ perceptron = Perceptron()
 perceptron.fit(X, y)  # Ajusta els pesos
 y_prediction = perceptron.predict(X)  # Prediu
 
+# Prediccions aïllades
+# ind_samples = np.array([[0, 0.25],[-1,-2]])
+# ind_predictions = perceptron.predict(ind_samples)
+# print(ind_predictions)
+
 #  Resultats
 plt.figure(1)
 plt.scatter(X[:, 0], X[:, 1], c=y_prediction)  # Mostram el conjunt de mostres el color indica la classe
+
+# Frontera de decisió
+x_values = np.linspace(X[:, 0].min(), X[:, 0].max(), 100)
+y_values = -(perceptron.w_[1] * x_values + perceptron.w_[0]) / perceptron.w_[2]
+
+plt.plot(x_values, y_values)
 plt.show()
