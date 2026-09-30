@@ -15,3 +15,4 @@ Durant aquest curs treballarem amb les següents tecnologies:
 
 1. Introducció al perceptró. Implementació des de zero.
 2. Perceptró i MLP amb `Scikit-learn`.
+3. Primera pràctica amb `PyTorch`. 
